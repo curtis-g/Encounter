@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Encounter</title>
+		<nav>
+		<a href ="index.html">Home</a> <!-- Took insparation from my CS25010 project for nav bar, but didn't have time to css -->
+		<a href="about1.html">About</a>
+		<link rel="stylesheet" type="text/css" href="../css/main1.css"/>
+		<style>
+			canvas 
+			{
+				display: block;
+				margin-left: auto; 
+				margin-right: auto;
+				margin-top: 20px;
+				margin-bottom: 20px;
+				background: #F5F5F5; 
+				image-rendering: crisp-edges;
+			}
+			
+			#audioControls
+			{
+				display: none;
+			}
+			
+			p
+			{
+				margin-left: 15px;
+			}
+			
+			h3
+			{
+				margin-left: 15px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="border_super">
+			<div id="border">
+				<div class="content"> <!-- div class for the content of the webpage -->
+					<canvas>
+						Use a different browser!
+					</canvas>
+					<!-- Classes -->
+					<script src='js/class_projectile.js'></script>
+					<script src='js/class_player.js'></script>
+					<script src='js/class_shape.js'></script>
+					<script src='js/class_vect.js'></script>
+					<script src='js/class_geometry_mesh.js'></script>
+					
+					
+					<!-- Tools -->
+					<script src='js/loader.js'></script>
+					<script src='js/utilities.js'></script>
+					<script src='js/keys.js'></script>
+					
+					<!-- Modules -->
+					<script src='js/module_sound.js'></script>
+					<script src='js/module_main.js'></script>
+					<script src='js/module_levels.js'></script>
+					<script src='js/module_projectiles.js'></script>
+					
+					<!-- audio section of JavaScript-->
+					<section id="audioControls">
+						<audio id="bgAudio" src="media/background.mp3" controls loop></audio>
+						<audio id="pShootAudio" src="media/db1.ogg" controls></audio>
+						<audio id="tShootAudio" src="media/tt1.mp3" controls></audio>
+						<audio id="effectAudio" controls></audio>
+					</section>
+					<hr>
+					<h3><u>Controls</u></h3>
+					<p>Move: W A S D</p>
+					<p>Shoot: Left Mouse Button</p>
+					<p>Aim: Use your cursor to aim.</p>
+					<hr>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

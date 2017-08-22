@@ -1,0 +1,261 @@
+/* global */
+*
+{
+	font-family: Lato, Verdana, Sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+/* grey background */
+body
+{
+	background-color: #CCD5DD;
+}
+
+/* super border that ensured proper surroundings of border box shadow */
+#border_super
+{
+	padding: 20px;
+}
+
+/* White background and box shadow */
+#border
+{
+	padding: 1em;
+	max-width: 950px;
+	margin: auto;
+	background-color: #FFFFFF;
+	border-radius: 4px;
+	box-shadow: 0px 0px 20px 5px #575757;
+}
+
+hr
+{
+	margin: 10px;
+	border: 2px solid #AA0000;
+	border-style:dotted;
+}
+
+/* More of a title, really. */
+header, footer
+{
+	text-align: center;
+}
+
+/* container for columns */
+.content
+{
+    clear: both;
+    content: "";
+}
+
+.content:after
+{
+	clear: both;
+	content: "";
+	display: table;
+}
+
+/* header and content share the same style*/
+header, footer, .content
+{
+	margin: 10px;
+	max-width: 2000px;
+	border: 2px solid #AA0000;
+	border-radius: 3px;
+	background-color: #F5F5F5;
+	
+	clear: both;
+}
+
+footer
+{
+	padding: 10px;
+}
+
+/* columns */
+#left_column
+{
+	float: left;
+	width: 66%;
+}
+
+#right_column
+{
+	float: right;
+	width: 33%;
+}
+
+.sub_column
+{	
+	margin: 10px;
+	padding: 8px;
+	border-radius: 3px;
+	background: #DDDDDD;
+	background: linear-gradient(#E0E0E0, #DBDBDB);  
+	background: -moz-linear-gradient(#E0E0E0, #DBDBDB);  
+	background: -webkit-linear-gradient(#E0E0E0, #DBDBDB);  
+	background: -o-linear-gradient(#E0E0E0, #DBDBDB);  
+}
+
+/* text */
+h1
+{
+	margin: 12px auto 12px auto;
+	font-family: 'Fjalla One', verdana, sans-serif;
+}
+
+nav
+{
+	font-family: 'Fjalla One', verdana, sans-serif;
+	text-align: center;
+	border: 2px;
+}
+
+h2
+{
+	margin: auto;
+	margin-bottom: 10px;
+	text-align: center;
+	padding: 0;
+	text-decoration: underline;
+	font-family: 'Fjalla One', verdana, sans-serif;
+}
+
+img
+{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+p, ol
+{
+	font-size: 1.08em;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-family: lato, arial, sans-serif;
+}
+
+/* Other Pages */
+.nav_list
+{
+	list-style-type: none;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.nav_list:after
+{
+	clear: both;
+	content: "";
+	display: table;
+}
+
+.nav_button
+{
+	text-align: center;
+	width: 220px;
+	padding: 4px;
+	text-decoration: none;
+	border: 2px solid #AAAAAA;
+	float: none;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 10px;
+	width: 150px;
+}
+
+.other
+{
+	color: #fff;
+	background-color: #000000;
+}
+
+.other:hover
+{
+	background-color: #FFFFFF;
+	color: #000000;
+}
+
+ol
+{
+	font-size: 1.5em;
+	list-style: inside decimal;
+}
+
+ul
+{
+	margin-left: 10px;
+	font-size: .8em;
+	list-style: inside;
+}
+
+.icon_pic
+{
+	position: relative;
+	bottom: 0px;
+	width: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	border: 4px solid #AA0000;
+	border-radius: 60px;
+	background-color: #F5F5F5;
+	z-index: 1;
+}
+
+.about_list
+{
+	list-style-type: square;
+	font-size: 22px;
+	font-weight: bold;
+}
+
+.about_list li
+{
+	margin-top: 12px;
+	margin-bottom: 20px;
+	font-size: .9em;
+}
+
+.about_list_sub
+{
+	list-style-type: none;
+	margin-top: 5px;
+	margin-left: 25px;
+	margin-bottom: 20px;
+}
+
+.about_list_sub li
+{
+	margin-top: 0px;
+}
+
+@media (max-width: 680px)
+{
+	#left_column
+	{
+		float: none;
+		width: auto;
+	}
+	
+	#right_column
+	{
+		float: none;
+		width: auto;
+	}
+	
+	.link_lvl_1
+	{
+		display: block;
+		padding: 18px 40px;
+		color: #000000;
+		text-decoration: none;
+	}
+	
+	.button_lvl_1
+	{
+		float: none;
+	}
+} 
